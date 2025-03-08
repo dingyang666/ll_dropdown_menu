@@ -461,7 +461,7 @@ class _DropDownCascadeListState extends State<DropDownCascadeList> {
               }
               if (widget.onSecondFloorItemTap != null) {
                 widget.onSecondFloorItemTap!(index, item);
-                return;
+                // return;
               }
 
               if (multipleChoice) {
