@@ -480,11 +480,13 @@ class _DropDownCascadeListState extends State<DropDownCascadeList> {
                 item.check = !item.check;
               } else {
                 for (var element in items) {
+                  element.check = false;
                   if (element.data == null) continue;
                   for (var subElement in element.data!) {
                     subElement.check = false;
                   }
                 }
+                items[firstFloorIndex].check = true;
                 item.check = true;
                 if (widget.onDropDownHeaderUpdate != null) {
                   DropDownHeaderStatus? status =
